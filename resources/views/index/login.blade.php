@@ -21,23 +21,23 @@
 </table>
 </body>
 </html>
-{{--<script>--}}
-	{{--$('#btn').click(function(){--}}
-		{{--var u_name=$('#u_name').val();--}}
-		{{--var u_pwd=$('#u_pwd').val();--}}
-		{{--// console.log(u_name);--}}
-		{{--// console.log(u_pwd);--}}
-		{{--$.post({--}}
-			{{--url:"/logindo",--}}
-			{{--data:{u_name:u_name,u_pwd:u_pwd},--}}
-			{{--dataType:'json',--}}
-			{{--success:function(res){--}}
-				{{--// console.log(res);--}}
-				{{--if(res.code==1){--}}
-					{{--alert(res.msg);--}}
-					{{--location.href="/";--}}
-				{{--}--}}
-			{{--}--}}
-		{{--})--}}
-	{{--})--}}
-{{--</script>--}}
+<script>
+	$('#btn').click(function(){
+		var u_name=$('#u_name').val();
+		var u_pwd=$('#u_pwd').val();
+		// console.log(u_name);
+		// console.log(u_pwd);
+		$.post({
+			url:"/logindo",
+			data:{u_name:u_name,u_pwd:u_pwd},
+			dataType:'json',
+			success:function(res){
+				// console.log(res);
+				if(res.code==1){
+					alert(res.msg);
+					location.href="/";
+				}
+			}
+		})
+	})
+</script>

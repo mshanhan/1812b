@@ -16,3 +16,9 @@ Route::get('/', function () {
 //    phpinfo();
 });
 Route::get('/index', 'TestController@index');
+
+
+Route::get('/register','LoginController@register');//注册
+Route::post('/regdo','LoginController@regdo');#注册执行
+Route::get('/login','LoginController@login');//登录页面
+Route::post('/logindo','LoginController@logindo');#注册登录
